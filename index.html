@@ -11,7 +11,7 @@
 <meta name="geo.region" content="EC">
 <link rel="canonical" href="https://nova-21.github.io/marka/">
 <link rel="icon" href="assets/marca.svg">
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=4">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_EC">
 <meta property="og:title" content="Firma electrónica de planos en Ecuador — #marka">
@@ -55,6 +55,7 @@
     <nav class="navegacion">
       <a href="#como">Cómo funciona</a>
       <a href="#licencia">Licencia</a>
+      <a href="#precio">Precio</a>
       <a class="boton boton-descarga" href="#" data-descarga>
         <span class="icono-descarga" aria-hidden="true">↓</span> Descargar
       </a>
@@ -66,13 +67,11 @@
 
   <section class="presentacion">
     <div class="contenido">
-      <p class="etiqueta">Firma electrónica para planos · Ecuador</p>
-      <h1>Firme todas las hojas de sus planos, sin sacarlos de su computadora.</h1>
+      <h1>Firma electrónica para planos PDF</h1>
       <p class="entrada">
-        #marka es el programa de firma electrónica para arquitectos e ingenieros: firma un plano
-        completo, de la primera a la última hoja, en un solo paso. Está hecho para planos
-        <strong>A0 y A1</strong> y usa firma <strong>PAdES</strong>, la que piden los trámites
-        municipales.
+        Marka es el programa de firma electrónica para arquitectos e ingenieros: firma un plano
+        completo, de la primera a la última hoja, en un solo paso. Optimizado para planos
+        <strong>A0 y A1</strong> y sigue el esándard <strong>PAdES</strong> para firma electrónica.
       </p>
       <p class="entrada">
         Sus planos y su certificado nunca salen de su equipo: el programa no envía nada a ningún
@@ -101,7 +100,7 @@
 
       <p class="para-quien">
         Para arquitectos, ingenieros civiles, eléctricos y mecánicos, topógrafos, constructoras,
-        estudios y consultores que presentan planos en ventanilla.
+        estudios y consultores que presentan planos a municipios.
       </p>
     </div>
   </section>
@@ -158,12 +157,21 @@
         <li>
           <span class="numero">2</span>
           <div>
+            <h3>Copie su licencia a la carpeta</h3>
+            <p>Coloque el archivo de licencia (<code>.lic</code>) que le enviamos dentro de la
+              misma carpeta del programa, junto al <code>.exe</code>. El programa lo detecta
+              solo al abrir.</p>
+          </div>
+        </li>
+        <li>
+          <span class="numero">3</span>
+          <div>
             <h3>Abra el programa</h3>
             <p>Haga doble clic en el archivo <code>.exe</code> de la carpeta y arrastre su plano.</p>
           </div>
         </li>
         <li>
-          <span class="numero">3</span>
+          <span class="numero">4</span>
           <div>
             <h3>Cargue su certificado y firme</h3>
             <p>Seleccione su certificado (<code>.p12</code> o <code>.pfx</code>), escriba su
@@ -175,11 +183,10 @@
       <div class="requisitos">
         <h3>Qué necesita</h3>
         <ul>
-          <li>Windows 10 u 11 de 64 bits.</li>
+          <li>Windows 10/11 de 64 bits.</li>
           <li>Un certificado de firma electrónica vigente (<code>.p12</code> / <code>.pfx</code>),
             como el que usa en FirmaEC.</li>
-          <li>Internet solo para activar la licencia la primera vez (y para el sellado de tiempo,
-            si lo activa).</li>
+          <li> Conexión a Internet para activar la licencia y obtener la hora de firma de servidores confiables.</li>
         </ul>
       </div>
     </div>
@@ -189,14 +196,31 @@
     <div class="contenido angosto">
       <h2>La licencia</h2>
       <p>
-        El programa pide un código de licencia la primera vez que se abre. Se emite a su nombre,
-        queda ligado al equipo donde lo activa y tiene una vigencia clara. Ni el código ni su clave
-        privada salen de su computadora.
+        El programa pide una licencia la primera vez que se abre. Se emite a su nombre y autoriza
+        los certificados que usted indique, con la vigencia acordada. No queda ligada a un
+        computador: funciona en cualquier equipo donde instale el programa. Ni la licencia ni su
+        clave privada salen de su computadora.
       </p>
-      <div class="acciones">
-        <a class="boton" id="whatsapp" href="#">Escribir por WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="precio" class="bloque bloque-suave">
+    <div class="contenido angosto">
+      <h2>Precio</h2>
+      <div class="precio">
+        <p class="precio-valor">$25</p>
+        <p class="precio-unidad">por certificado autorizado</p>
       </div>
-      <p class="nota">Escríbanos y se la enviamos con las instrucciones.</p>
+      <ul class="precio-notas">
+        <li>La licencia no está ligada a un computador: puede instalar el programa en varios
+          equipos sin restricción.</li>
+        <li>La restricción está en el certificado: cada certificado autorizado necesita su
+          licencia.</li>
+        <li>Venta limitada mientras el proyecto está en etapas tempranas de desarrollo.</li>
+      </ul>
+      <div class="acciones">
+        <a class="boton" id="whatsapp-precio" href="#">Escribir por WhatsApp</a>
+      </div>
     </div>
   </section>
 
@@ -221,6 +245,8 @@
           #marka ayuda a firmar y a comprobar firmas, pero <strong>no garantiza que un tercero</strong>
           (un municipio, una entidad pública o un cliente) acepte un documento: cada institución tiene
           sus propios requisitos.
+
+          Para mayor certeza en la validación de firmas, usar FirmaEC. 
         </p>
       </details>
 
@@ -228,9 +254,8 @@
         <summary>2. Licencia de uso</summary>
         <p>
           El programa se <strong>licencia, no se vende</strong>. La licencia es personal, para el
-          equipo o los equipos que se indiquen al emitirla, y por el tiempo de vigencia acordado. No
-          se permite redistribuir el programa, revenderlo, ni usar una licencia en un equipo para el
-          que no fue emitida.
+           o los certificados que se indiquen al emitirla, y por el tiempo de vigencia acordado. No
+          se permite redistribuir el programa, revenderlo, ni editarlo.
         </p>
       </details>
 
@@ -239,8 +264,8 @@
         <p>
           Usted es responsable de usar el programa conforme a la ley y a los requisitos de cada
           institución, de mantener la custodia de su certificado y de su contraseña, y del contenido
-          de los documentos que firma. El programa nunca tiene acceso a su clave privada ni la
-          envía a ninguna parte.
+          de los documentos que firma. El programa nunca
+          envía información a servidores externos.
         </p>
       </details>
 
@@ -249,7 +274,7 @@
         <p>
           El programa se entrega <strong>«tal como está»</strong>. Se prueba cada versión antes de
           publicarla (incluido que el ejecutable arranque), pero no se garantiza que funcione sin
-          interrupciones ni que sirva para un propósito específico. En la medida en que la ley lo
+          interrupciones ni que sirva para un propósito específico, el proyecto se encuentra en estado de desarrollo y venta al público limitada. En la medida en que la ley lo
           permita, la responsabilidad total del proveedor se limita al valor pagado por la licencia.
         </p>
       </details>
@@ -283,7 +308,7 @@
         <ul>
           <li><strong>Para emitir la licencia:</strong> su nombre o razón social, su número de
             cédula o RUC si lo proporciona, un contacto para darle soporte y la huella digital
-            (impresión) de su certificado, que es lo que ata la licencia a su equipo.</li>
+            (impresión) de su certificado, que es lo que ata la licencia a su identidad.</li>
           <li><strong>Dentro del programa:</strong> el certificado y su contraseña quedan
             guardados en su computadora, para no tener que escribirlos cada vez. No se envían a
             ninguna parte.</li>
@@ -305,9 +330,7 @@
         <summary>3. Qué sale a internet y qué no</summary>
         <p>
           Nada de sus planos ni de sus documentos. Lo único que puede salir es: el mensaje de
-          WhatsApp que usted mismo envía si pide soporte, y —si activa el sellado de tiempo— el
-          resumen del documento que se envía a la autoridad de sellado para obtener la marca de
-          tiempo. En ese caso viaja una huella del documento, no el documento.
+          WhatsApp que usted mismo envía si pide soporte.
         </p>
       </details>
 
@@ -315,7 +338,7 @@
         <summary>4. Cuánto tiempo se conservan</summary>
         <p>
           Los datos de la licencia se conservan mientras esté vigente y hasta dos años después, para
-          poder verificar una renovación o un reemplazo de equipo. Si pide su eliminación antes, se
+          poder verificar una renovación. Si pide su eliminación antes, se
           borran, salvo aquello que la ley obligue a conservar.
         </p>
       </details>
