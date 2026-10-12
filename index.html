@@ -11,7 +11,7 @@
 <meta name="geo.region" content="EC">
 <link rel="canonical" href="https://nova-21.github.io/marka/">
 <link rel="icon" href="assets/marca.svg">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_EC">
 <meta property="og:title" content="Firma electrónica de planos en Ecuador — #marka">
@@ -53,10 +53,8 @@
       <span class="marca-texto">marka</span>
     </a>
     <nav class="navegacion">
-      <a href="#para-quien">Para quién</a>
-      <a href="#que-hace">Qué hace</a>
-      <a href="#como">Cómo empezar</a>
-      <a href="#legal">Legal</a>
+      <a href="#como">Cómo funciona</a>
+      <a href="#licencia">Licencia</a>
       <a class="boton boton-descarga" href="#" data-descarga>
         <span class="icono-descarga" aria-hidden="true">↓</span> Descargar
       </a>
@@ -69,17 +67,16 @@
   <section class="presentacion">
     <div class="contenido">
       <p class="etiqueta">Firma electrónica para planos · Ecuador</p>
-      <h1>Firme los planos de todas sus páginas, sin sacarlos de su computadora.</h1>
+      <h1>Firme todas las hojas de sus planos, sin sacarlos de su computadora.</h1>
       <p class="entrada">
-        #marka es el programa de <strong>firma electrónica</strong> pensado para
-        <strong>arquitectos e ingenieros</strong>: firma un plano completo, de la primera a la última
-        hoja, con un solo paso. Está optimizado para planos <strong>A0 y A1</strong>, que es lo que
-        se presenta en los <strong>trámites municipales</strong> de aprobación de planos, y usa el
-        formato de firma <strong>PAdES</strong>.
+        #marka es el programa de firma electrónica para arquitectos e ingenieros: firma un plano
+        completo, de la primera a la última hoja, en un solo paso. Está hecho para planos
+        <strong>A0 y A1</strong> y usa firma <strong>PAdES</strong>, la que piden los trámites
+        municipales.
       </p>
       <p class="entrada">
-        Sus planos y su certificado nunca salen de su computadora: el programa no envía nada a
-        ningún servidor.
+        Sus planos y su certificado nunca salen de su equipo: el programa no envía nada a ningún
+        servidor.
       </p>
 
       <div class="acciones">
@@ -101,109 +98,52 @@
           coincidir exactamente con este:</p>
         <code data-sha256>—</code>
       </details>
-    </div>
-  </section>
 
-  <section id="para-quien" class="bloque">
-    <div class="contenido">
-      <h2>Para quién es</h2>
-      <p class="entrada-chica">
-        Para los profesionales que firman planos y los presentan en una ventanilla: donde cada hoja
-        tiene que ir firmada, y donde el archivo pesa demasiado para subirlo tal como está.
-      </p>
-      <div class="publico">
-        <span class="chip">Arquitectos</span>
-        <span class="chip">Ingenieros civiles</span>
-        <span class="chip">Ingenieros eléctricos</span>
-        <span class="chip">Ingenieros mecánicos</span>
-        <span class="chip">Topógrafos</span>
-        <span class="chip">Constructoras</span>
-        <span class="chip">Estudios de arquitectura</span>
-        <span class="chip">Consultores de obra</span>
-      </div>
-      <p class="entrada-chica">
-        Si usted firma planos para aprobación de planos, permisos de construcción, licencias
-        urbanísticas o para entregar un proyecto a un cliente, #marka le resuelve el paso de la
-        firma: un <strong>plano</strong> firmado y listo para presentar, sin depender de otro
-        programa ni de una conexión a internet.
+      <p class="para-quien">
+        Para arquitectos, ingenieros civiles, eléctricos y mecánicos, topógrafos, constructoras,
+        estudios y consultores que presentan planos en ventanilla.
       </p>
     </div>
   </section>
 
-  <section id="que-hace" class="bloque bloque-suave">
+  <section id="que-hace" class="bloque">
     <div class="contenido">
       <h2>Qué hace</h2>
       <div class="tarjetas">
 
         <article class="tarjeta">
           <span class="simbolo" aria-hidden="true">▤</span>
-          <h3>Todas las páginas, de una vez</h3>
-          <p>Un plano de 12 hojas, firmado en las 12, con un solo paso. La mayoría de los trámites
-            municipales pide que cada hoja esté firmada y sellada; aquí no hay que repetir la
-            operación hoja por hoja.</p>
+          <h3>Todas las hojas, de una vez</h3>
+          <p>Un plano de 12 hojas, firmado en las 12 con un solo paso. El sello queda en la misma
+            posición en cada página.</p>
         </article>
 
         <article class="tarjeta">
           <span class="simbolo" aria-hidden="true">◱</span>
           <h3>Hecho para A0 y A1</h3>
-          <p>Los planos grandes se abren y se recorren con fluidez, con zoom al detalle y al sello.
-            El sello se coloca en la posición que usted elija y se repite igual en todas las
-            páginas, sin desproporciones.</p>
+          <p>Los planos grandes se abren y se recorren con fluidez, con zoom al detalle y al sello,
+            sin desproporciones.</p>
         </article>
 
         <article class="tarjeta">
           <span class="simbolo" aria-hidden="true">✓</span>
           <h3>Firma PAdES, no una imagen</h3>
-          <p>Firma electrónica en formato <strong>PAdES</strong>, con SHA-512 y estructura
-            ETSI.CAdES.detached, y sellado de tiempo (RFC 3161) si lo activa. No pega una imagen
-            del certificado: agrega una firma electrónica verificable.</p>
-        </article>
-
-        <article class="tarjeta">
-          <span class="simbolo" aria-hidden="true">◎</span>
-          <h3>No rompe las firmas que ya tenía</h3>
-          <p>Agrega su firma al final del archivo, así que las firmas anteriores siguen siendo
-            válidas. Es lo que necesita un plano que ya pasó por el proyectista, el calculista o el
-            revisor, y todavía tiene que llevar la suya.</p>
-        </article>
-
-        <article class="tarjeta">
-          <span class="simbolo" aria-hidden="true">⌕</span>
-          <h3>Valida lo que le llega</h3>
-          <p>Antes de firmar le indica si el plano está intacto, quién lo firmó y cuándo. Si una
-            firma no se puede verificar, lo dice con claridad en lugar de mostrar un resultado
-            engañoso.</p>
+          <p>Firma electrónica verificable (SHA-512, sellado de tiempo opcional) que no invalida las
+            firmas que el plano ya tenía. El sello lleva un código QR.</p>
         </article>
 
         <article class="tarjeta">
           <span class="simbolo" aria-hidden="true">⇄</span>
-          <h3>Las utilidades que se agradecen</h3>
-          <p>Junta varias hojas o anexos en un solo PDF, comprime los planos que pesan demasiado
-            para una plataforma, y recupera los que no se dejan abrir. Si recuperar un documento va
-            a invalidar sus firmas, le avisa antes de hacerlo.</p>
-        </article>
-
-        <article class="tarjeta">
-          <span class="simbolo" aria-hidden="true">▦</span>
-          <h3>Sello con código QR</h3>
-          <p>El sello que queda sobre el plano lleva el nombre del firmante, la fecha y un código QR
-            verificable, para que cualquiera pueda comprobar quién firmó sin abrir el detalle
-            técnico.</p>
-        </article>
-
-        <article class="tarjeta">
-          <span class="simbolo" aria-hidden="true">◈</span>
-          <h3>Plantillas por formato</h3>
-          <p>Guarda la posición del sello por tamaño de hoja y orientación (A4 vertical, A3
-            horizontal, A0…). La próxima vez que firme ese formato, el sello aparece dónde
-            corresponde.</p>
+          <h3>Y lo que se agradece</h3>
+          <p>Valide las firmas antes de firmar, una varios PDF en uno, comprima los que pesan
+            demasiado y recupere los que no abren.</p>
         </article>
 
       </div>
     </div>
   </section>
 
-  <section id="como" class="bloque">
+  <section id="como" class="bloque bloque-suave">
     <div class="contenido">
       <h2>Cómo empezar</h2>
       <ol class="pasos">
@@ -211,27 +151,23 @@
           <span class="numero">1</span>
           <div>
             <h3>Descargue y descomprima</h3>
-            <p>Descargue el archivo y descomprímalo en el lugar donde quiera tener el programa
-              (por ejemplo, <code>C:\marka</code> o el Escritorio). No hay instalador ni permisos de
-              administrador que otorgar.</p>
+            <p>Descomprima la carpeta donde quiera tener el programa (por ejemplo
+              <code>C:\marka</code>). Sin instalador ni permisos de administrador.</p>
           </div>
         </li>
         <li>
           <span class="numero">2</span>
           <div>
             <h3>Abra el programa</h3>
-            <p>Haga doble clic en el archivo <code>.exe</code> que viene dentro de la carpeta (es el
-              único). Se abre la ventana del programa: arrastre su plano o selecciónelo con el
-              botón.</p>
+            <p>Haga doble clic en el archivo <code>.exe</code> de la carpeta y arrastre su plano.</p>
           </div>
         </li>
         <li>
           <span class="numero">3</span>
           <div>
             <h3>Cargue su certificado y firme</h3>
-            <p>Seleccione su certificado de firma electrónica (<code>.p12</code> o <code>.pfx</code>),
-              escriba su contraseña, elija "todas las páginas" y firme. La primera vez le solicitará
-              el código de licencia.</p>
+            <p>Seleccione su certificado (<code>.p12</code> o <code>.pfx</code>), escriba su
+              contraseña, elija «todas las páginas» y firme.</p>
           </div>
         </li>
       </ol>
@@ -241,38 +177,30 @@
         <ul>
           <li>Windows 10 u 11 de 64 bits.</li>
           <li>Un certificado de firma electrónica vigente (<code>.p12</code> / <code>.pfx</code>),
-            de los que emiten las entidades autorizadas en Ecuador; funciona también con el que usa
-            en FirmaEC.</li>
-          <li>Su certificado y su contraseña, para cargarlos la primera vez. Quedan guardados en su
-            equipo.</li>
-          <li>No necesita internet para firmar: solo para activar la licencia la primera vez y, si
-            lo activa, para el sellado de tiempo.</li>
+            como el que usa en FirmaEC.</li>
+          <li>Internet solo para activar la licencia la primera vez (y para el sellado de tiempo,
+            si lo activa).</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section id="licencia" class="bloque bloque-suave">
+  <section id="licencia" class="bloque">
     <div class="contenido angosto">
       <h2>La licencia</h2>
       <p>
-        El programa solicita un código de licencia la primera vez que se abre. Se emite a su nombre,
-        queda vinculado al equipo donde la activa y tiene una vigencia claramente establecida.
-      </p>
-      <p>
-        Para obtenerla o renovarla, escríbanos por WhatsApp y se la enviamos con las instrucciones.
+        El programa pide un código de licencia la primera vez que se abre. Se emite a su nombre,
+        queda ligado al equipo donde lo activa y tiene una vigencia clara. Ni el código ni su clave
+        privada salen de su computadora.
       </p>
       <div class="acciones">
         <a class="boton" id="whatsapp" href="#">Escribir por WhatsApp</a>
       </div>
-      <p class="nota">
-        El código de licencia no incluye sus planos ni su clave privada. Se puede emitir y enviar
-        sin que ninguno de ellos salga de su computadora.
-      </p>
+      <p class="nota">Escríbanos y se la enviamos con las instrucciones.</p>
     </div>
   </section>
 
-  <section id="legal" class="bloque">
+  <section id="legal" class="bloque bloque-suave">
     <div class="contenido angosto">
       <h2>Términos y condiciones de uso</h2>
       <p class="nota-legal">
@@ -280,7 +208,7 @@
         acepta estos términos.
       </p>
 
-      <details class="legal" open>
+      <details class="legal">
         <summary>1. Qué es #marka y qué no es</summary>
         <p>
           #marka es un <strong>programa de firma electrónica de documentos</strong> para Windows.
@@ -319,7 +247,7 @@
       <details class="legal">
         <summary>4. Garantías y límites</summary>
         <p>
-          El programa se entrega <strong>"tal como está"</strong>. Se prueba cada versión antes de
+          El programa se entrega <strong>«tal como está»</strong>. Se prueba cada versión antes de
           publicarla (incluido que el ejecutable arranque), pero no se garantiza que funcione sin
           interrupciones ni que sirva para un propósito específico. En la medida en que la ley lo
           permita, la responsabilidad total del proveedor se limita al valor pagado por la licencia.
@@ -350,7 +278,7 @@
         datos:
       </p>
 
-      <details class="legal" open>
+      <details class="legal">
         <summary>1. Qué datos se tratan</summary>
         <ul>
           <li><strong>Para emitir la licencia:</strong> su nombre o razón social, su número de
