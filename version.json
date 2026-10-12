@@ -1,8 +1,8 @@
 {
   "version": "1.6.0",
-  "fecha": "",
-  "peso": "",
-  "sha256": "",
+  "fecha": "12 de octubre de 2026",
+  "peso": "118 MB",
+  "sha256": "7444139039a065e3194f8ef1669e2e74408c9afdf455fe2c708b69b428ccb966",
   "archivo": "marka-win64.zip",
-  "publicado": false
+  "publicado": true
 }
