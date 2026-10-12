@@ -91,8 +91,8 @@ code {
 .marca-texto { color: var(--ink); font-weight: 650; font-size: 19px; letter-spacing: -.01em; }
 
 .navegacion { display: flex; align-items: center; gap: 24px; }
-.navegacion a { color: var(--secondary); text-decoration: none; font-size: 15.5px; }
-.navegacion a:hover { color: var(--ink); }
+.navegacion a:not(.boton) { color: var(--secondary); text-decoration: none; font-size: 15.5px; }
+.navegacion a:not(.boton):hover { color: var(--ink); }
 
 /* ── botones ────────────────────────────────────────────────────── */
 
@@ -117,7 +117,10 @@ code {
 .boton:focus-visible { outline: 3px solid var(--primary-borde); outline-offset: 2px; }
 .boton-grande { padding: 16px 30px; font-size: 18px; }
 
-/* Boton de la barra: mismo trato que el principal, no una version apagada. */
+/* Boton de la barra: mismo trato que el principal, no una version apagada.
+   Ojo con la especificidad: la regla del menu (.navegacion a) es mas especifica que .boton y le
+   ganaba el color del texto, dejando gris oscuro sobre indigo (contraste 1.04). Por eso la regla
+   del menu excluye .boton. */
 .boton-descarga {
   padding: 10px 20px;
   font-size: 16px;
