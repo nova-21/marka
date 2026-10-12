@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>#marka — Firma electrónica de PDFs en tu PC</title>
+<meta name="description" content="#marka firma, valida y sella tus PDFs con tu certificado de firma electrónica del Ecuador. Todo pasa en tu computadora: ningún documento se sube a internet.">
+<link rel="icon" href="assets/marca.svg">
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="#marka — Firma electrónica de PDFs">
+<meta property="og:description" content="Firma, valida y sella tus documentos con tu certificado. Sin nube: todo pasa en tu PC.">
+<meta property="og:type" content="website">
+</head>
+<body>
+
+<header class="barra">
+  <div class="contenido fila">
+    <a class="marca" href="#inicio">
+      <span class="logo" aria-hidden="true">#</span>
+      <span class="marca-texto">marka</span>
+    </a>
+    <nav class="navegacion">
+      <a href="#que-hace">Qué hace</a>
+      <a href="#como">Cómo empezar</a>
+      <a href="#licencia">Licencia</a>
+      <a class="boton boton-chico" href="#" data-descarga>Descargar</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <section class="presentacion">
+    <div class="contenido">
+      <p class="etiqueta">Para Windows 10 y 11</p>
+      <h1>Firmá tus PDFs sin subirlos a ningún lado.</h1>
+      <p class="entrada">
+        #marka firma, valida y sella planos y documentos con <strong>tu</strong> certificado de
+        firma electrónica. Todo el trabajo pasa en tu computadora: los documentos y tu clave
+        nunca salen de ella.
+      </p>
+
+      <div class="acciones">
+        <a class="boton boton-grande" href="#" data-descarga>
+          <span class="icono-descarga" aria-hidden="true">↓</span>
+          Descargar para Windows
+        </a>
+        <a class="enlace-secundario" href="#licencia">Necesitás una licencia para activarlo</a>
+      </div>
+
+      <p class="detalle-version">
+        Versión <span data-version>1.6.0</span>
+        <span data-fecha></span>
+        <span data-peso></span>
+      </p>
+      <details class="firma-archivo">
+        <summary>Verifica la descarga (SHA-256)</summary>
+        <p>Cuando termine la descarga, podés comprobar que el archivo llegó completo. El código
+          tiene que coincidir exactamente con este:</p>
+        <code data-sha256>—</code>
+      </details>
+    </div>
+  </section>
+
+  <section id="que-hace" class="bloque">
+    <div class="contenido">
+      <h2>Qué hace</h2>
+      <div class="tarjetas">
+
+        <article class="tarjeta">
+          <span class="simbolo" aria-hidden="true">▤</span>
+          <h3>Firma donde necesites</h3>
+          <p>Una página o todas de una vez: poné el sello donde va y #marka lo repite en las
+            páginas que le digas. En el mismo lugar, sin arrastrar nada.</p>
+        </article>
+
+        <article class="tarjeta">
+          <span class="simbolo" aria-hidden="true">✓</span>
+          <h3>Valida lo que ya está firmado</h3>
+          <p>Antes de firmar, te dice si el documento sigue intacto, quién lo firmó y cuándo.
+            Si alguna firma no se puede verificar, lo dice claro en vez de esconderlo.</p>
+        </article>
+
+        <article class="tarjeta">
+          <span class="simbolo" aria-hidden="true">◎</span>
+          <h3>No invalida las firmas que ya tiene</h3>
+          <p>Agrega tu firma al final del archivo, así que las anteriores siguen siendo válidas.
+            Es lo que la ley espera de un documento que ya pasó por otras manos.</p>
+        </article>
+
+        <article class="tarjeta">
+          <span class="simbolo" aria-hidden="true">⇄</span>
+          <h3>Ordena, comprime y une</h3>
+          <p>Junta varios PDFs, comprime los que pesan demasiado y arregla los que no se dejan
+            abrir. Si arreglar un documento le va a romper las firmas, te avisa antes.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="como" class="bloque bloque-suave">
+    <div class="contenido">
+      <h2>Cómo empezar</h2>
+      <ol class="pasos">
+        <li>
+          <span class="numero">1</span>
+          <div>
+            <h3>Descargá y descomprimí</h3>
+            <p>Bajá el archivo y descomprimilo en el lugar donde quieras tener el programa
+              (por ejemplo, en el Escritorio). No hay instalador ni nada que aceptar.</p>
+          </div>
+        </li>
+        <li>
+          <span class="numero">2</span>
+          <div>
+            <h3>Abrí #marka.exe</h3>
+            <p>Se abre la ventana del programa. Arrastrá tu PDF o elegilo con el botón.</p>
+          </div>
+        </li>
+        <li>
+          <span class="numero">3</span>
+          <div>
+            <h3>Cargá tu certificado y firmá</h3>
+            <p>Elegí tu archivo de firma electrónica (<code>.p12</code> o <code>.pfx</code>), tu
+              contraseña, y firmá. La primera vez te va a pedir el código de licencia.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="requisitos">
+        <h3>Qué necesita</h3>
+        <ul>
+          <li>Windows 10 u 11 de 64 bits.</li>
+          <li>Tu certificado de firma electrónica (<code>.p12</code> / <code>.pfx</code>), el mismo
+            que usás en otros programas de firma.</li>
+          <li>No necesita internet para firmar. Solo para activar la licencia la primera vez.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="licencia" class="bloque">
+    <div class="contenido angosto">
+      <h2>La licencia</h2>
+      <p>
+        El programa pide un código de licencia la primera vez que lo abrís. Se emite a tu nombre
+        y queda ligado a tu equipo, con una vigencia clara.
+      </p>
+      <p>
+        Para conseguirla o renovarla, escribinos y te la enviamos con las instrucciones.
+      </p>
+      <div class="acciones">
+        <a class="boton" id="whatsapp" href="#">Escribir por WhatsApp</a>
+        <a class="enlace-secundario" href="mailto:soporte@marka.ec">soporte@marka.ec</a>
+      </div>
+      <p class="nota">
+        El código de licencia no lleva tus documentos ni tu clave privada. Se puede emitir y
+        enviar sin que salgan de tu computadora.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="contenido fila-pie">
+    <p>
+      <span class="logo logo-chico" aria-hidden="true">#</span>
+      <strong>marka</strong> — firma electrónica de documentos. Hecho en Ecuador.
+    </p>
+    <p><a href="mailto:soporte@marka.ec">soporte@marka.ec</a> · <span id="whatsapp-pie"></span></p>
+  </div>
+</footer>
+
+<script src="sitio.js"></script>
+</body>
+</html>
