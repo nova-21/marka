@@ -7,7 +7,7 @@
   var REPO_PUBLICO = "nova-21/marka";
   var ARCHIVO = "marka-win64.zip";
   var WHATSAPP = "593996761222";
-  var MENSAJE = "Hola, quiero activar #marka (firma electrónica de PDFs).";
+  var MENSAJE = "Hola, deseo activar #marka (firma electrónica de documentos).";
 
   var DESCARGA = "https://github.com/" + REPO_PUBLICO + "/releases/latest/download/" + ARCHIVO;
   var NOVEDADES = "https://github.com/" + REPO_PUBLICO + "/releases/latest";
