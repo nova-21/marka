@@ -30,7 +30,10 @@
   }
 
   function pintarWhatsApp() {
-    var enlaces = [document.getElementById("whatsapp"), document.getElementById("whatsapp-pie")];
+    var enlaces = [
+      document.getElementById("whatsapp-precio"),
+      document.getElementById("whatsapp-pie"),
+    ];
     enlaces.forEach(function (nodo) {
       if (!nodo) return;
       nodo.setAttribute("href", enlaceWhatsApp());

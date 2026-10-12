@@ -242,6 +242,38 @@ code {
 
 .nota { margin-top: 14px; color: var(--muted); font-size: 14.5px; }
 
+/* ── precio ──────────────────────────────────────────────────── */
+
+.precio {
+  background: var(--blanco);
+  border: 1px solid var(--superficie-2);
+  border-radius: var(--radio);
+  padding: 26px 30px;
+  box-shadow: var(--sombra);
+  text-align: center;
+  margin: 18px 0 16px;
+}
+
+.precio-valor {
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: -.02em;
+}
+
+.precio-unidad { color: var(--secondary); font-size: 15.5px; margin: 4px 0 0; }
+
+.precio-notas {
+  margin: 0 0 4px;
+  padding-left: 20px;
+  color: var(--secondary);
+  font-size: 15px;
+}
+
+.precio-notas li + li { margin-top: 6px; }
+
 /* ── legal ───────────────────────────────────────────────────── */
 
 .nota-legal { color: var(--muted); font-size: 14.5px; margin: 0 0 14px; }
