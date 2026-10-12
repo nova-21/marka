@@ -1,4 +1,4 @@
-/* Sitio de #marka: muestra la versión publicada y arma los enlaces de descarga.
+/* Sitio de #marka: muestra la versión publicada y arma los enlaces de descarga y de WhatsApp.
    Sin librerías: lo que no carga, se degrada a un enlace que igual funciona. */
 
 (function () {
@@ -7,7 +7,7 @@
   var REPO_PUBLICO = "nova-21/marka";
   var ARCHIVO = "marka-win64.zip";
   var WHATSAPP = "593996761222";
-  var MENSAJE = "Hola, deseo activar #marka (firma electrónica de documentos).";
+  var MENSAJE = "Hola, deseo información sobre #marka (firma electrónica de planos).";
 
   var DESCARGA = "https://github.com/" + REPO_PUBLICO + "/releases/latest/download/" + ARCHIVO;
   var NOVEDADES = "https://github.com/" + REPO_PUBLICO + "/releases/latest";
@@ -29,10 +29,21 @@
     });
   }
 
+  function pintarWhatsApp() {
+    var enlaces = [document.getElementById("whatsapp"), document.getElementById("whatsapp-pie")];
+    enlaces.forEach(function (nodo) {
+      if (!nodo) return;
+      nodo.setAttribute("href", enlaceWhatsApp());
+      nodo.setAttribute("rel", "noopener");
+      nodo.setAttribute("target", "_blank");
+    });
+  }
+
   function pintarVersion(datos) {
     if (datos.version) texto("[data-version]", datos.version);
     if (datos.fecha) {
       texto("[data-fecha]", "publicada el " + datos.fecha);
+      texto("#fecha-legal", datos.fecha);
     } else {
       texto("[data-fecha]", "publicada recientemente");
     }
@@ -45,12 +56,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    var enlaces = [document.getElementById("whatsapp"), document.getElementById("whatsapp-pie")];
-    enlaces.forEach(function (nodo) {
-      if (!nodo) return;
-      nodo.setAttribute("href", enlaceWhatsApp());
-      nodo.setAttribute("rel", "noopener");
-    });
+    pintarWhatsApp();
 
     // Enlace seguro por defecto (funciona aunque el JSON no cargue).
     apuntarDescargas(DESCARGA);
