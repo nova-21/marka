@@ -4,7 +4,8 @@ Página pública del programa de firma electrónica de PDFs. Es un sitio **está
 un poco de JavaScript, sin librerías ni servidor) publicado con **GitHub Pages** desde este mismo
 repositorio.
 
-- Sitio: https://nova-21.github.io/marka/
+- Sitio: https://www.markaec.com/ (dominio propio; el apex `markaec.com` redirige a `www`). La
+  direccion de GitHub Pages, `https://nova-21.github.io/marka/`, redirige al dominio.
 - Descarga directa: https://github.com/nova-21/marka/releases/latest/download/marka-win64.zip
 
 ## Por qué este repositorio es aparte (y público)
